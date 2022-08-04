@@ -1,0 +1,186 @@
+.main{
+    width: 100%;
+    height: 386px;
+    background-color: rgb(241, 241, 241);
+    display: grid;
+    gap: 35px;
+    grid-template-columns: 1fr 40fr 1fr;
+}
+.button{
+    display: flex;
+    align-items: center;
+}
+.button button{
+    padding: 10px 8px;
+    font-size: 24px;
+    border: none;
+    background-color: rgb(216, 214, 214);
+    color: grey;
+    cursor: pointer;
+}
+.body{
+    overflow: scroll;
+    display: grid;
+    margin: 0px 0px 20px 0px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    gap: 3px;
+    scroll-behavior: smooth;
+}
+.body::-webkit-scrollbar{
+    display: none;
+}
+.body .inside{
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: flex-end; 
+}
+.inside .details{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.inside  #name{
+    color: grey;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    width: 90px;
+    cursor:default;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.inside  #price{
+    font-size: 12px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    cursor:default;
+    font-weight: bold;
+}
+.inside #image{
+    height: 65px;
+    width: 90px;
+    margin: 5px 0px;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 0px 5px;
+}
+
+/*START - first row 7th item grid layout*/
+.inside:nth-child(19){
+    height: auto;
+    grid-column: 7/8;
+    grid-row: 1/3;
+}
+.inside:nth-child(53){
+    grid-column: 19/20;
+    grid-row: 1/3;
+    height: auto;
+}
+.inside:nth-child(77){
+    grid-column: 31/32;
+    grid-row: 1/3;
+    height: auto;
+}
+.inside:nth-child(7) #image, .inside:nth-child(19) #image, .inside:nth-child(27) #image, .inside:nth-child(37) #image, .inside:nth-child(53) #image, .inside:nth-child(57) #image, .inside:nth-child(67) #image, .inside:nth-child(77) #image, .inside:nth-child(87) #image{
+    height: 190px !important;
+}
+/*END - first row 7th item grid layout end*/
+
+/*START - second row first item grid layout*/
+.inside:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    width:auto;
+}
+.inside:nth-child(32){
+    grid-column: 13/15;
+    grid-row: 2/3;
+    width: auto;
+}
+.inside:nth-child(62){
+    grid-column: 25/27;
+    grid-row: 2/3;
+    width: auto;
+}
+.inside:nth-child(2) #image, .inside:nth-child(32) #image, .inside:nth-child(62) #image, .inside:nth-child(12) #image, .inside:nth-child(42) #image, .inside:nth-child(72) #image, .inside:nth-child(22) #image, .inside:nth-child(51) #image, .inside:nth-child(82) #image{
+    width: 193px;
+}
+/*END - second row first item grid layout*/
+
+/*START - second row second item grid layout*/
+.inside:nth-child(7){
+    grid-column: 3/4;
+    grid-row: 2/4;
+    height: auto;
+}
+.inside:nth-child(37){
+    grid-column: 15/16;
+    grid-row: 2/4;
+    height: auto;
+}
+.inside:nth-child(67){
+    grid-column: 27/28;
+    grid-row: 2/4;
+    height: auto;
+}
+/*END - second row second item grid layout*/
+
+/*START - second row fourth item grid layout*/
+.inside:nth-child(12){
+    grid-column: 5/7;
+    grid-row: 2/3;
+    width: auto;
+}
+.inside:nth-child(42){
+    grid-column: 17/19;
+    grid-row: 2/3;
+    width: auto;
+}
+.inside:nth-child(72){
+    grid-column: 29/31;
+    grid-row: 2/3;
+    width: auto;
+}
+/*END - second row fourth item grid layout*/
+
+/*START - second row sixth item grid layout*/
+.inside:nth-child(22){
+    grid-column: 9/11;
+    grid-row: 2/3;
+    width: auto;
+}
+.inside:nth-child(51){
+    grid-column: 21/23;
+    grid-row: 2/3;
+    width: auto;
+}
+.inside:nth-child(82){
+    grid-column: 33/35;
+    grid-row: 2/3;
+    width: auto;
+}
+/*END - second row sixth item grid layout*/
+
+/*START - second row seventh item grid layout*/
+.inside:nth-child(27){
+    grid-column: 11/12;
+    grid-row: 2/4;
+    height: auto;
+}
+.inside:nth-child(57){
+    grid-column: 23/24;
+    grid-row: 2/4;
+    height: auto;
+}
+.inside:nth-child(87){
+    grid-column: 35/36;
+    grid-row: 2/4;
+    height: auto;
+}
+/*END - second row seventh item grid layout */

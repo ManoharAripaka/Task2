@@ -1,0 +1,75 @@
+.main_header{
+    background-color: rgb(241, 241, 241);
+}
+.header{
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+.header > *{
+    width: fit-content;
+}
+.header #title{
+    padding-left: 70px;
+    font-size: 24px;
+    font-weight: 200;
+    color: brown;
+    margin-right: 100px;
+    
+}
+.category p{
+    font-size: 12px;
+}
+.category #category{
+    border: none;
+    background-color: transparent;
+    width: 110px;
+    margin: 5px 0px 0px -3px;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+}
+.vert_line{
+    border: 1px solid rgba(216, 213, 213, 0.658);
+    width: 0px;
+    height: 40px;
+    margin-top: 10px;
+    margin: 0px 20px;
+}
+.search{
+    margin-top: 5px;
+}
+.search #sea{
+    font-size: 12px;
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+.search_list{
+    display: flex;
+
+}
+.search_tag{
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search_tag > p{
+    font-size: 11px;
+    text-align: center;
+}
+.search_tag #img{
+    font-size: 16px;
+}
+.price{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.price p{
+    font-size: 12px;
+    margin-left: -10px;
+}
+.price #slider{
+    width: 203px;
+}

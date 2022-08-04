@@ -1,0 +1,19 @@
+.suggest{
+    height: 39px;
+    display: flex;
+    background-color: rgb(241, 241, 241);
+    font-size: 14px;
+    padding-left: 100px;
+    padding-top: 10px;
+}
+#suggest_title{
+    font-weight: bold;
+}
+#suggest_opt{
+    margin-left: 20px;
+    color: blue;
+    cursor: pointer;
+}
+#suggest_opt:hover{
+    text-decoration: underline;
+}
